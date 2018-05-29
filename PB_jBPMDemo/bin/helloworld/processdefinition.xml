@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns="urn:jbpm.org:jpdl-3.2"  name="fellowId">
+
+
+	<start-state name="start-state1">
+		<transition to="state1"></transition>
+	</start-state>
+
+
+	<state name="state1">
+		<transition to="node1"></transition>
+	</state>
+
+	<node name="node1">
+		<transition to="state2"></transition>
+	</node>
+
+	<state name="state2">
+		<transition to="end-state1"></transition>
+	</state>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>
